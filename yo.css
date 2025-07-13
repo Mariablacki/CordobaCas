@@ -1,0 +1,202 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.esfera{
+    position: fixed;
+    bottom: 10px;
+    top: 10px;
+    left: 10px;
+  width: 80px;
+  height: auto;
+  animation: spin 20s linear infinite;
+  opacity: 0.8;
+  z-index: 999;
+}
+
+.yo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 40px;
+  padding: 20px;
+}
+
+.foto, .descripcion {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  display: block;
+  margin: auto;
+}
+
+.descripcion {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1200px){
+  .yo{
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .yo {
+    flex-direction: column; 
+     gap: 200px;
+     margin-top: 35%;
+  }
+
+  .foto, .descripcion {
+    width: 100%; 
+  }
+  .descripcion{
+       margin-top: 50%;
+  }
+    .foto{
+     height: 20px;
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .yo {
+    flex-direction: column; 
+     gap: 200px;
+     margin-top: 35%;
+  }
+
+  .foto, .descripcion {
+    width: 100%; 
+  }
+  .descripcion{
+       margin-top: 50%;
+  }
+    .foto{
+     height: 20px;
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  }
+  }
+
+@media (max-width: 600px) {
+  .yo {
+    flex-direction: column; 
+     gap: 200px;
+     margin-top: 55%;
+  }
+
+  .foto, .descripcion {
+    width: 100%; 
+  }
+  .descripcion{
+       margin-top: 50%;
+  }
+    .foto{
+     height: 20px;
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  }
+  }
+
+  @media (max-width: 500px) {
+  .yo {
+    flex-direction: column; 
+     gap: 200px;
+     margin-top: 75%;
+  }
+
+  .foto, .descripcion {
+    width: 100%; 
+  }
+  .descripcion{
+       margin-top: 50%;
+  }
+    .foto{
+     height: 20px;
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  }
+  }
+  @media (max-width: 550px) {
+  .yo {
+    flex-direction: column; 
+     gap: 200px;
+     margin-top: 75%;
+  }
+
+  .foto, .descripcion {
+    width: 100%; 
+  }
+  .descripcion{
+       margin-top: 50%;
+  }
+    .foto{
+     height: 20px;
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  }
+  }
+
+  @media (max-width: 400px) {
+  .yo {
+    flex-direction: column; 
+     gap: 200px;
+     margin-top: 75%;
+  }
+
+  .foto, .descripcion {
+    width: 100%; 
+  }
+  .descripcion{
+       margin-top: 50%;
+  }
+    .foto{
+     height: 20px;
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  }
+  }

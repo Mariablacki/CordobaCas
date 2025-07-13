@@ -1,0 +1,169 @@
+body{
+background-image: url(ChatGPT\ Image\ 10\ jul\ 2025\,\ 19_29_31.png);
+background-size: cover;
+overflow-y: scroll;
+-webkit-text-fill-color: rgba(243, 243, 255, 0.686);
+}
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#perro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px; 
+  pointer-events: none;
+  z-index: 1000;
+  transition: top 0.1s ease, left 0.1s ease; 
+}
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.esfera{
+    position: fixed;
+    bottom: 10px;
+    top: 10px;
+    left: 10px;
+  width: 80px;
+  height: auto;
+  animation: spin 20s linear infinite;
+  opacity: 0.8;
+  z-index: 999;
+}
+
+.container {
+  margin: 50px auto;
+  width: 800px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px; 
+}
+
+.pixel, .pixel2, .pixel3{
+  color: white;
+  height: auto;
+  margin: 10px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  
+  cursor: pointer;
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+}
+
+    @media (max-width: 1500px){ 
+      .pixel, .pixel2, .pixel3 {
+        font-size: 40px;
+      }
+    }
+        @media (max-width: 1200px){ 
+      .pixel, .pixel2, .pixel3 {
+        font-size: 35px;
+      }
+    }
+        @media (max-width: 900px){ 
+      .pixel, .pixel2, .pixel3 {
+        font-size: 30px;
+      }
+    }
+        @media (max-width: 750px){ 
+      .pixel, .pixel2, .pixel3 {
+        font-size: 25px;
+      }
+    }
+
+            @media (max-width: 400px){ 
+      .pixel, .pixel2, .pixel3 {
+        font-size: 20px;
+      }
+    }
+
+.pixel:active, .pixel2:active, .pixel3:active{
+  top: 2px;
+}
+
+.pixel, .pixel2, .pixel3 {
+  line-height: 0;
+  
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  
+  border-style: solid;
+  border-width: 20px;
+  -moz-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  -webkit-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  -o-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  
+}
+
+.pixel p, .pixel2 p, .pixel3 p {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: auto;
+  text-align: center;
+  margin: -20px -20px;
+  line-height: 20px;
+  padding: 10px 20px;
+  
+	background: #000000;
+	background:
+		linear-gradient(135deg, transparent 10px, #000000 0) top left,
+		linear-gradient(225deg, transparent 10px, #000000 0) top right,
+		linear-gradient(315deg, transparent 10px, #000000 0) bottom right,
+		linear-gradient(45deg,  transparent 10px, #000000 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-image:
+		radial-gradient(circle at 0 0, rgba(204,0,0,0) 14px, #000000 15px),
+		radial-gradient(circle at 100% 0, rgba(204,0,0,0) 14px, #000000 15px),
+		radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 14px, #000000 15px),
+		radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #000000 15px);
+}
+

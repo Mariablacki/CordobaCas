@@ -1,0 +1,100 @@
+body{
+    font-family: 'VT323', monospace;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    place-items: center; 
+}
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.grid-cuantica {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+    @media (max-width: 1500px){ 
+      .grid-cuantica {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 1450px){ 
+      .grid-cuantica {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    
+
+    @media (max-width: 1100px){ 
+      .grid-cuantica {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 750px){ 
+    .grid-cuantica {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+
+.cuadro {
+  background-color: #121212;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cuadro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #00ffcc;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.esfera{
+    position: fixed;
+    bottom: 10px;
+    top: 10px;
+    left: 10px;
+  width: 80px;
+  height: auto;
+  animation: spin 20s linear infinite;
+  opacity: 0.8;
+  z-index: 999;
+}
+
+#buscador{
+  background: #111;
+  padding: 10px;
+  border-radius: 8px;
+  color: aliceblue;
+}
