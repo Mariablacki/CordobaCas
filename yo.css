@@ -60,7 +60,7 @@ body{
   margin: auto;
 }
 
-.descripcion {
+.descripcion,.descripcion2 {
   font-family: 'VT323', monospace;
   font-size: 24px;
   color: white;
